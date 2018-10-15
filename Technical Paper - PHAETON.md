@@ -3,39 +3,39 @@
 ##www.plaak.com##
 
 
-Index
+**Index**
 
 
-Abstract
-	1	Introduction
-Basic Terminology
-	2	Cryptocurrencies: Overview
-	3	Mining
-	4	Consensus Mechanisms
-	5	Peer-to-Peer Networks
-	6	Data compression
-	7	Cryptography
-8	Digital Signatures
-	9	Hashing 
-	10	Algorithms
+**Abstract**
+	-	Introduction
+    -   Basic Terminology
+	-	Cryptocurrencies: Overview
+	-	Mining
+	-	Consensus Mechanisms
+	-	Peer-to-Peer Networks
+	-	Data compression
+	-	Cryptography
+    -	Digital Signatures
+	-	Hashing 
+	-	Algorithms
 
 #Performance
 Improvements
-•	Nodes
-	•	Consensus protocol (DPoS)
-	•	Side chains & DAPPS
-How it works
-Sidechain benefits 
-Use cases
-	•	Sidechain validation network (SVN)
-•	Economics & Fees
-	•	Business info & applications
+-	Nodes
+	-	Consensus protocol (DPoS)
+	-	Side chains & DAPPS
+- How it works
+- Sidechain benefits 
+- Use cases
+	-	Sidechain validation network (SVN)
+    -	Economics & Fees
+	-	Business info & applications
 
 
 
 
 
-Table of Contents
+**Table of Contents**
 
 Table of Contents	2
 1. Abstract	4
@@ -109,21 +109,22 @@ Citations:	48
 
 
 
-1. Abstract
+
+## 1. Abstract 
 					
 It’s increasingly difficult to create constructive solutions and find real-world outlets for the novel business abstraction layer that stems from blockchain technology. Decentralization, as a key feature of a blockchain, can be transposed to a self-governed societal or organizational group. There is a discrepancy between the degrees of authentic autonomy compatible with technology development in general. The measurement of success among emerging blockchain companies is the value they provide to investors and the community. Two innovations based on the underlying technology recently arose as a prominent factor in the form of Smart Contracts and distributed applications (DApps). To maximize the potential for prosperity in the current market-specific environment, we resort to utilizing the technology to the furthest extent. This implies providing an all-encompassing blockchain product and a blockchain network as a service. We developed a proprietary, custom virtual currency called Phaeton to minimize operational costs, maximize efficiency and mitigate risks. In our view, a virtual currency is a means and not a goal. While developing applications based on blockchain technology, the company engages with the underlying technology and as multifaceted solutions are scarce, offering it as a service is conducive as long as it doesn’t jeopardize the primary applicative use. For expanding the use cases of the network without compromising the security of assets of investors and users, Phaeton uses side chains. The original term of side chains is pegged chains as an attribute of Bitcoin. Additionally, they contribute to maintaining performance for both the main and the side chains. Based on the detrimental effect on the efficiency of the Ethereum network, we isolate the distributed applications in side chains.To protect the application ecosystem from the volatility of the cryptocurrency market, side chain validation and maintenance of consensus over the entire network, we apply the Delegated Proof of Stake(DPoS) consensus protocol. All of the aspects of Phaeton are intertwined and segregated at the same time, adhering to best practices which are described in this paper to their full extent.
 					
 Keywords: Cryptocurrency, Blockchain, Side Chains, Smart Contracts, DPoS
 				
-1.1 Introduction
+##### 1.1 Introduction
 
 Currency transactions between persons or companies are often centralized and controlled by a third party organization. Making a digital payment or currency transfer requires a bank or a credit card provider as a middleman to complete the transaction. In addition, a transaction incurs a fee from a bank or a credit card company. The same process applies to several other domains, such as games, music, software, etc. The transaction system is typically centralized. All data and information are controlled and managed by a third party organization, rather than the two principal entities involved in the transaction. Blockchain technology has been developed to solve this issue. The goal of Blockchain technology is to create a decentralized environment where no third party is in control of the transactions and data.
 		
 The blockchain is a distributed database solution that maintains a continuously growing list of data records that are confirmed by the nodes participating in it. The data is recorded in a public ledger, including information about every transaction ever completed. The blockchain is a decentralized solution which does not require any third party organization in the middle. The information about every transaction ever completed is shared and available to all nodes in the blockchain.
 
-This attribute makes the system more transparent than centralized transactions involving a third party. In addition, nodes in the blockchain are all anonymous, which makes it more secure for each node to verify the transactions. Bitcoin was the first application that introduced blockchain technology. Bitcoin created a decentralized environment for its cryptocurrency, where the participants can buy and exchange goods and assets with digital money. However, even though blockchain technology seems to be a suitable solution for conducting transactions by using cryptocurrencies, it still has some technical challenges and limitations that need to be studied and addressed.[1] High integrity of transactions and security, as well as the privacy of nodes, are needed to prevent attacks and attempts to disturb transactions in the blockchain. In addition, confirming transactions in the blockchain requires computational power. It is important to identify which topics have already been studied and addressed in blockchain technology and what are currently the biggest challenges and limitations that require further study.[2]
+This attribute makes the system more transparent than centralized transactions involving a third party. In addition, nodes in the blockchain are all anonymous, which makes it more secure for each node to verify the transactions. Bitcoin was the first application that introduced blockchain technology. Bitcoin created a decentralized environment for its cryptocurrency, where the participants can buy and exchange goods and assets with digital money. However, even though blockchain technology seems to be a suitable solution for conducting transactions by using cryptocurrencies, it still has some technical challenges and limitations that need to be studied and addressed.[1] High integrity of transactions and security, as well as the privacy of nodes, are needed to prevent attacks and attempts to disturb transactions in the blockchain. In addition, confirming transactions in the blockchain requires computational power. It is important to identify which topics have already been studied and addressed in blockchain technology and what are currently the biggest challenges and limitations that require further study.
 
-What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party. Transactions that are computationally impractical to reverse would protect sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. In this paper, we propose a solution to the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions. The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes.[3]
+What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party. Transactions that are computationally impractical to reverse would protect sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. In this paper, we propose a solution to the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions. The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes.
 
 While policymakers are concerned about the opportunities and challenges brought about by these technological advances, there is very little guidance provided by economic theory regarding the appropriate usage of these technologies and the optimal design of these systems. This paper attempts to provide an economic theory to help us understand the fundamental economic trade-offs and address relevant policy issues. Most existing models of cryptocurrencies are built by computer scientists who focus mainly on the feasibility and security of these systems. This line of research often ignores the incentives of participants (e.g., the incentives of malicious attackers) and the endogenous nature of key variables (e.g., the real value of cryptocurrencies). More importantly, to study the optimal design of a cryptocurrency system, we need to model from first principles the behaviours of different participants, to derive the equilibrium interactions among these agents and to study the optimal usage of different policy instruments. To this end, this paper develops a general equilibrium monetary model of a cryptocurrency system to study its optimal design. This approach is desirable because the model endogenizes the value of cryptocurrency, and endogenizes the underlying trading activities and mining activities. It also provides a welfare notion for assessing alternative system designs. We will use this model to evaluate the performance of a cryptocurrency system calibrated to Bitcoin transaction statistics. We will study the optimal design of the cryptocurrency system in different settings. Furthermore, we compare the usage of different consensus protocols.
 	
@@ -133,13 +134,10 @@ The economic literature on cryptocurrencies is very thin. So far, there are only
 		
 Chiu and Wong (2015) apply the mechanism design approach to review several e-money technologies including Bitcoin, PayPal and M-Pesa and identify some essential features of e-money that can help implement constrained efficient allocations. Gans and Halaburda (2013) develop a model of platform management to study platform-specific digital currencies such as Facebook Credits.
 
-Fernảndez-Villaverde and Sanches (2016) model cryptocurrencies as privately issued fiat currencies and analyze whether competition leads to efficiency. Agarwal and Kimball (2015) advocate that the adoption of digital currencies can facilitate the implementation of a negative interest rate policy. Rogoff (2016) suggests subsidizing the provision of digital money to the unbanked in order to phase out paper currency which facilitates undesirable tax evasion and criminal activities. To the best of our knowledge, our work is the first paper that explicitly models the distinctive technological features of a cryptocurrency system (e.g. blockchain, mining, double-spending problems) in an equilibrium monetary model and investigates its optimal design both qualitatively and quantitatively[4].
+Fernảndez-Villaverde and Sanches (2016) model cryptocurrencies as privately issued fiat currencies and analyze whether competition leads to efficiency. Agarwal and Kimball (2015) advocate that the adoption of digital currencies can facilitate the implementation of a negative interest rate policy. Rogoff (2016) suggests subsidizing the provision of digital money to the unbanked in order to phase out paper currency which facilitates undesirable tax evasion and criminal activities. To the best of our knowledge, our work is the first paper that explicitly models the distinctive technological features of a cryptocurrency system (e.g. blockchain, mining, double-spending problems) in an equilibrium monetary model and investigates its optimal design both qualitatively and quantitatively.
 
 
-
-
-
-2. Basic Terminology
+## 2. Basic Terminology
 
 Blockchain - A decentralized, public Ledger of Information
 Consensus protocol - An irrefutable system of agreement between various devices
@@ -155,28 +153,28 @@ P2P – Peer-to-Peer protocol
 SVN - Side chain validation network
 
 
-3. Cryptocurrencies: Overview
+## 3. Cryptocurrencies: Overview
 
-3.1 Bitcoin & Ethereum: Basics				
+##### 3.1 Bitcoin & Ethereum: Basics				
 			
-Bitcoin’s three main technical components: transactions (including scripts), the consensus protocol, and the communication network. Bitcoin is exceedingly complex. Our goal is to present a system with sufficient technical depth which the literature on Bitcoin lacks. The evaluation and systematized proposal of changes are made insightful by “decoupling” concepts that may be changed independently benefits from of our three-component breakdown. The idea of utilizing its enablement of technology to develop applications beyond currency has been receiving increasing attention. In particular, the public and append-only ledger of transactions (the blockchain) and the decentralized consensus protocol that Bitcoin nodes use to extend it. The archetypal implementation of smart contracts is Ethereum, a platform rendering them in a Turing-complete language. The consensus protocol of Ethereum ensures that all and only the valid updates to the contract states are recorded on the blockchain, thus ensuring their correct execution. [5]
+Bitcoin’s three main technical components: transactions (including scripts), the consensus protocol, and the communication network. Bitcoin is exceedingly complex. Our goal is to present a system with sufficient technical depth which the literature on Bitcoin lacks. The evaluation and systematized proposal of changes are made insightful by “decoupling” concepts that may be changed independently benefits from of our three-component breakdown. The idea of utilizing its enablement of technology to develop applications beyond currency has been receiving increasing attention. In particular, the public and append-only ledger of transactions (the blockchain) and the decentralized consensus protocol that Bitcoin nodes use to extend it. The archetypal implementation of smart contracts is Ethereum, a platform rendering them in a Turing-complete language. The consensus protocol of Ethereum ensures that all and only the valid updates to the contract states are recorded on the blockchain, thus ensuring their correct execution.
 	
-Besides Bitcoin and Ethereum, a remarkable number of alternative platforms have flourished over the last few years, either implementing cryptocurrencies or Smart Contracts in some form. For instance, the number of crypto-currencies hosted on coinmarketcap.com has increased from 0 to more than 600 since 2012; the number of Github projects related to blockchains and smart contracts has reached, respectively, 2,715 and 445 units. In the meanwhile, ICT companies and some national governments have also started dealing with these topics with significant investments. [6]
+Besides Bitcoin and Ethereum, a remarkable number of alternative platforms have flourished over the last few years, either implementing cryptocurrencies or Smart Contracts in some form. For instance, the number of crypto-currencies hosted on coinmarketcap.com has increased from 0 to more than 600 since 2012; the number of Github projects related to blockchains and smart contracts has reached, respectively, 2,715 and 445 units. In the meanwhile, ICT companies and some national governments have also started dealing with these topics with significant investments. 
 
 Also, there are some identified technical challenges and limitations of blockchain technology. Seven technical challenges and limitations for the adoption of blockchain technology in the future:
 
-• Throughput: The potential throughput of transactions in the Bitcoin network is currently at a maximum of 7tps (transactions per second). For comparison, other transaction processing networks have the following throughput: VISA (2,000tps), Twitter (5,000tps). When the frequency of transactions in the blockchain increases to a similar level, the throughput of the blockchain network needs to be improved.
+- Throughput: The potential throughput of transactions in the Bitcoin network is currently at a maximum of 7tps (transactions per second). For comparison, other transaction processing networks have the following throughput: VISA (2,000tps), Twitter (5,000tps). When the frequency of transactions in the blockchain increases to a similar level, the throughput of the blockchain network needs to be improved.
 	
-• Latency: To achieve sufficient security for a Bitcoin transaction block, it currently takes roughly 10 minutes to complete one transaction. To achieve efficiency in security, more time has to be spent on a block, because it has to outweigh the cost of double-spending attacks. Double-spending is successful spending of money more than once. In Bitcoin, each transaction is verified before appendment to the blockchain for protection from double-spending, acting as insurance from the previous spending of inputs for a transaction. Currently, this makes latency a big issue in blockchain technology. Making a block and confirming the transaction should happen in seconds while maintaining security. Completing a transaction in VISA, for example, takes only a few seconds which is a huge advantage compared to the blockchain.
+- Latency: To achieve sufficient security for a Bitcoin transaction block, it currently takes roughly 10 minutes to complete one transaction. To achieve efficiency in security, more time has to be spent on a block, because it has to outweigh the cost of double-spending attacks. Double-spending is successful spending of money more than once. In Bitcoin, each transaction is verified before appendment to the blockchain for protection from double-spending, acting as insurance from the previous spending of inputs for a transaction. Currently, this makes latency a big issue in blockchain technology. Making a block and confirming the transaction should happen in seconds while maintaining security. Completing a transaction in VISA, for example, takes only a few seconds which is a huge advantage compared to the blockchain.
 
-• Size and bandwidth: At the moment, the size of the blockchain in the Bitcoin network is over 50,000MB (February 2016). The Bitcoin community assumes the size of one block is 1MB and the creation of a new block happens every ten minutes. Therefore, there is a limitation in the number of transactions that can be handled (on average 500 transactions in one block). If the Blockchain needs to control more transactions, the size and bandwidth issues have to be solved.
+- Size and bandwidth: At the moment, the size of the blockchain in the Bitcoin network is over 50,000MB (February 2016). The Bitcoin community assumes the size of one block is 1MB and the creation of a new block happens every ten minutes. Therefore, there is a limitation in the number of transactions that can be handled (on average 500 transactions in one block). If the Blockchain needs to control more transactions, the size and bandwidth issues have to be solved.
 
-• Security: The possibility of a 51% attack persists in current blockchain technology. In a 51% attack, a single entity would have full control of the majority of the network’s mining hash-rate and would be able to manipulate the blockchain. To overcome this issue, more research on security is necessary.
-• Wasted resources: Mining Bitcoin wastes huge amounts of energy ($15million/day). The Proof-of-Work effort causes the waste of resources. There are some alternatives in industry fields, such as proof-of-stake, DPOS (Delegate Proof of Stake). With Proof-of-Work, the probability of mining a block depends on the work done by the miner. However, in Proof-of-Stake, the resource that matters is the amount of stake a miner holds. For example, someone holding 1% of the Bitcoin blockchain could mine 1% of the “Proof-of-Stake blocks”. The issue with wasted resources needs to be solved to have more efficient mining in the blockchain.
+- Security: The possibility of a 51% attack persists in current blockchain technology. In a 51% attack, a single entity would have full control of the majority of the network’s mining hash-rate and would be able to manipulate the blockchain. To overcome this issue, more research on security is necessary.
+- Wasted resources: Mining Bitcoin wastes huge amounts of energy ($15million/day). The Proof-of-Work effort causes the waste of resources. There are some alternatives in industry fields, such as proof-of-stake, DPOS (Delegate Proof of Stake). With Proof-of-Work, the probability of mining a block depends on the work done by the miner. However, in Proof-of-Stake, the resource that matters is the amount of stake a miner holds. For example, someone holding 1% of the Bitcoin blockchain could mine 1% of the “Proof-of-Stake blocks”. The issue with wasted resources needs to be solved to have more efficient mining in the blockchain.
 
-• Usability: The Bitcoin API for developing services is difficult to use. There is a need to develop a more developer-friendly API for the blockchain. This is comparable to REST APIs.
+- Usability: The Bitcoin API for developing services is difficult to use. There is a need to develop a more developer-friendly API for the blockchain. This is comparable to REST APIs.
 
-• Versioning, hard forks, multiple chains: A small chain that consists of a small number of nodes has a higher possibility of a 51% attack. Another issue emerges when chains are being split for administrative or for versioning purposes.[7]
+- Versioning, hard forks, multiple chains: A small chain that consists of a small number of nodes has a higher possibility of a 51% attack. Another issue emerges when chains are being split for administrative or for versioning purposes.
 
 Ethereum, taken as a whole, can be viewed as a transaction-based state machine: It begins with a genesis state and incrementally executes transactions to morph it into some final state. It is this final state which we accept as the canonical “version” of the world of Ethereum. The state can include information such as account balances, reputations, trust arrangements, and data pertaining to information of the physical world; in short, anything that can currently be represented by a computer is admissible. Transactions thus represent a valid arc between two states; the ‘valid’ part is important—there are far more invalid state changes than valid state changes. Invalid state changes might e.g. be things such as reducing an account balance without an equal and opposite increase elsewhere. 
 	
@@ -192,17 +190,17 @@ Blocks are the result of collating transactions; blocks are chained together usi
 
 Mining is the process of dedicating effort (working) to bolster one series of transactions (a block) over any other potential competitor block. The achievement depends on cryptographically secure proof. [8]
 	
-3.2 Bitcoin & Ethereum: Differences	
-3.2.1 Use Case: Ethereum
+##### 3.2 Bitcoin & Ethereum: Differences	
+##### 3.2.1 Use Case: Ethereum
 
 Transaction format: A transaction contains an array of inputs and an array of outputs. The entire transaction is hashed using SHA-2564 and this hash eventually serves as its globally unique transaction ID. Transactions are represented using an ad hoc binary format; each output contains an integer value representing a quantity of the Bitcoin currency. The precision of this value limits the extent to which units of the currency can be subdivided; the smallest unit is called a satoshi. By convention, 108 satoshis are considered the primary unit of currency, called one “bitcoin” and denoted B, BTC or XBT. Each output also has a short code snippet (in a special scripting language) called the scriptPubKey which represents conditions under which that transaction output is redeemable, that is, included as an input in a later transaction.
 
 Transaction scripts: Typically, the scriptPubKey specifies the hash of an ECDSA public key and a signature validation routine. This is called a “pay-to-pub-key-hash” transaction and the entire redeeming transaction must be signed using a key with the specified hash. The vast majority of Bitcoin transactions are pay-to-pub-key-hash while the system is often described as this being the only possibility, although other transaction types are possible. The scripting language is an ad hoc, non-Turing-complete stack language with fewer than 200 commands called opcodes. They include support for cryptographic operations—e.g., hashing data and verifying signatures. Like the transaction format, the scripting language is only specified by how the Bitcoin blockchain implements it. Transaction inputs refer to previous transactions by their transaction hash and the index of the output within that transaction’s output array. They must also contain a code snippet which “redeems” that transaction output called the scriptSig. To successfully redeem a previous transaction, the scriptSig and scriptPubKey, both must execute successfully, one after the other, using the same stack. For pay-to-pubkey-hash transactions, the scriptSig is simply a complete public key (with the correct hash) and a signature.
 	
-Conservation of value: In addition to the requirements that each transaction input should match a previous transaction output and that the two scripts execute successfully, transactions are only valid if they satisfy the fundamental constraint that the sum of values of all transaction outputs is less than or equal to the sum of the values of all inputs.[9]
+Conservation of value: In addition to the requirements that each transaction input should match a previous transaction output and that the two scripts execute successfully, transactions are only valid if they satisfy the fundamental constraint that the sum of values of all transaction outputs is less than or equal to the sum of the values of all inputs.
 	
 
-3.2.3 Use Case: Bitcoin
+##### 3.2.3 Use Case: Bitcoin
 	
 The account state comprises the following four fields:
 
@@ -214,9 +212,9 @@ StorageRoot: A 256-bit hash of the root node of a Merkle Patricia tree(trie) tha
 
 CodeHash: The hash of the EVM code of this account—this being the code that gets executed should this address receive a message call; it is immutable and thus, unlike all other fields, cannot be changed after construction. All of such code fragments are contained in the state database under their corresponding hashes for later retrieval. The formal denotation of this hash is σ[a]c thus the code may be denoted b, given that KEC (b) = σ[a]c.[10]
 
-4. Consensus Mechanisms:    
+## 4. Consensus Mechanisms:    
 
-4.1 Mining 
+##### 4.1 Mining 
 
 To understand the consensus mechanism of the Bitcoin system, we first have to discuss the role of a miner. A miner collects pending Bitcoin transactions, verifies their legitimacy, and assembles them into what is known as a “block candidate.” The goal is to earn newly created Bitcoin units through this activity. The miner can succeed in doing this if he or she can convince all other network participants to add his or her block candidate to their copies of the Bitcoin blockchain.
 
@@ -254,9 +252,9 @@ With Phaeton, we use Delegated Proof of Stake (DPoS) as its consensus protocol. 
 
 A consensus protocol is a key aspect of any blockchain system. It serves a vital purpose in a system comprised of countless nodes where all nodes need to agree on the integrity of the data appended to the blockchain. The term ‘consensus’, in this context, means that the nodes on the network agree on the same state of a blockchain, essentially making it a self-auditing ecosystem. This is an absolutely crucial aspect of the technology, carrying out two key functions. Firstly, consensus protocols allow a blockchain to be updated, while ensuring that every block in the chain is true as well as keeping participants incentivized. Secondly, it prevents any single entity from controlling or derailing the whole blockchain system. The aim of consensus rules is to guarantee a single chain is used and followed.[13]
 	
-4.2. Consensus layer support
+##### 4.2. Consensus layer support
                     
-4.2.1 The linked list data pointer structure
+##### 4.2.1 The linked list data pointer structure
                     
 In order to construct our protocol, we rely on the same linked list data structure used by Proof-of-Proof-of-Work (PoPoW)[14]. This is an additional hash-based data structure that we propose to include in the header of each block. The linked list data structure is a skip-list that makes it efficient for a verifier to process a sparse subset of the blockchain, rather than only consecutive blocks. 
     	
@@ -276,14 +274,15 @@ Fig. 2. The blockchain hierarchy. Higher levels have achieved a lower target (hi
 The algorithm for this construction is borrowed from and shown in Algorithm 1.
 The interlink data structure turns the blockchain into a skip list-like data structure.
 The updateInterlink algorithm accepts a block B′, which has a predefined linked list data structure. The function evaluates the linked list data structure which needs inclusion as part of the next block. It copies the existing interlink data structure and then modifies its entries from level 0 to level (B′) to point to the block B′.    
-4.2.2 Traversing the blockchain
+
+##### 4.2.2 Traversing the blockchain
 
 As we now have extended blocks containing multiple pointers to previous blocks, if we omit certain blocks from a chain we obtain a subchain, as long as the sequence maintains the blockchain property where each block includes a pointer to its previous block.
 
 Blockchains are sequences, but it is more convenient to use set notations for some operations. Specifically, the meaning of B ∈ C; C1⊆ C2 and ∅ is obvious. C1 ∪ C2 is the chain obtained by sorting the blocks contained in both C1 and C2 into a sequence (this might not always be defined).  We will freely use the set builder notation { B ∈ C : p ( B ) } .C1 ∩ C2 is the chain { B : B ∈ C1 ∧ B ∈ C2 }. In all cases, we must maintain the blockchain properties. The lowest common ancestor is LCA (C1, C2) = (C1 ∩ C2)[−1]. If C1 [0] =C2 [0] and C1 [−1] = C2 [−1], we state that the chains C1, C2 span in the same block range. We will promptly clarify that it is useful to construct a chain containing only the superblocks of another chain. Given C and level μ, we define the upchain C↑μ as { B∈C : level ( B ) ≥ μ }. A chain containing only μ-superblocks is called a μ-superchain. It is also useful to go back to the regular C chain, given a μ-superchain C′. Given that chains C′ ⊆ C, we define the downchain C′↓C  as C [ C′ [0] : C′ [−1]]. C is the underlying chain of C′. The underlying chain is often contextually implied, so we will simply note C′↓.
 By the above definition, the C↑ operator is absolute: (C↑μ)μ+i = C↑μ+i. Given a set of consecutive rounds S = {r,r+ 1,···,r+j} ⊆ N, we define CS = { B∈C:B was generated during S}.
 
-4.2.3 Non-interactive blockchain suffix proofs
+##### 4.2.3 Non-interactive blockchain suffix proofs
 In this section, we modify the PoPoW scheme introduced in KLS to make it non-interactive. With foresight, we caution the reader that the non-interactive construction we present in this section is insecure because its base layer PoPoW scheme is also insecure. A very small patch will allow us to later modify our construction to achieve security.
     
 Their scheme only allowed proving suffix predicates, predicates that pertain to the suffix of the blockchain. We continue along those lines to give our NIPoPoW construction which allows proving certain predicates Q of the chain C. Among the predicates which are stable, in this section, we limit ourselves to suffix sensitive predicates (similar to the previous work which did not make this distinction explicit). We extend the protocol to support more flexible predicates (such as transaction inclusion, as needed for our applications)
@@ -294,7 +293,7 @@ Notice that if a predicate Q is suffix-sensitive, then its value must be determi
 4.2.4 Example
 In general, our applications will require predicates that are not suffix-sensitive. However, as an example, we take into consideration the predicate “an Ethereum contract at address C has been initialized with code h at least k blocks ago” where h does not invoke the self-destruct opcode. This can be implemented in a suffix-sensitive way because, in Ethereum, each block includes a Merkle Trie over all of the contract codes, unchangeable after initialization. This predicate is thus both monotonic and k-stable.[15]
 		
-4.2.5 Exact probabilities of covert forkability for explicit values of n
+##### 4.2.5 Exact probabilities of covert forkability for explicit values of n
 For comparison with the general use case, we computed the probability that a string drawn from the binomial distribution is covertly forkable. These results are presented in Figure 9. (Note that these probabilities are simply appropriate evaluations of the cumulative density function of the binomial distribution.) We present the analogous results for the general use case in Figure 3.
     
  
@@ -302,10 +301,10 @@ For comparison with the general use case, we computed the probability that a str
 	
 
 
-Figure 3: Graphs of the probability that a string drew from the binomial distribution is
+##### Figure 3: Graphs of the probability that a string drew from the binomial distribution is
 covertly forkable. Graphs for string lengths n = 500, 1000, 1500, 2000 are shown with parameters. 40, 41,....,49, 50.(16)
 
-5. P2P Network
+## 5. P2P Network
 
 The Peer to Peer(abbr. P2P) networking model is an essential component of blockchain technology, contributing to both stability and security. This segment of the technical paper gives a general overview of P2P and the advantages that its decentralized character offers over the standard networking schemes that prevalent at present. 
        
@@ -329,11 +328,11 @@ With the development of Peer to Peer networks and their implementation in the bl
 
 Despite monitoring of communication between peers on the network, the information is encrypted with algorithms used by organizations dealing with data of the highest degree of sensitivity. The purpose of viewable information is for dispute resolution or detection of illegal activities. 
  
-5.1 Architecture
+##### 5.1 Architecture
 
 The nodes in the Phaeton network utilize JSON objects. The transaction data and the blocks are compressed. The Phaeton code operating in all peers in the Phaeton network utilizes remote procedure calls (RPCs) and events to broadcast the JSON objects, namely transactions and blocks, to the rest of the nodes. The RPCs and events are also communicated as JSON objects with additional fields and relayed to the Phaeton application to provide it with information used to choose the method for processing the transmitted object. In order to effectively transmit these JSON objects to the other peers, Phaeton uses WebSockets via the SocketCluster Framework.
 
-5.1.1 System Headers
+##### 5.1.1 System Headers
 
 Every time a Phaeton node communicates with a peer on the Phaeton network, it adds a system header to the message. The system headers are used to identify full nodes and provide basic information about the software running on the system.
 
@@ -350,32 +349,40 @@ For this purpose, system data is used to generate the following JSON object:
       "minVersion":">=0.5.0"
     }
 
-5.1.2 Block Propagation
+##### 5.1.2 Block Propagation
 
 Block propagation plays an integral part in the Phaeton network. As it is an essential structural component, if it wasn't for block propagation, the blockchain as a whole becomes inoperable. A single node creates a block and in a decentralized network, the data transmission to all nodes for the establishment of consensus is a must. Upon the creation of a new block, the node broadcasts a message to 25 blocks randomly chosen peers. The blockchain replicates the process by forwarding the message to the next batch of 25 random peers, and so forth. To avoid saturating the network with data broadcasts, we cap the turn over at 3 and blocks acquired by a satisfactory total of hosts are exempt from broadcasting.
 
 
-5.1.3 Transaction Propagation
+##### 5.1.3 Transaction Propagation
 
 Transferring a transaction from a single node to all nodes on the network is a prerequisite for including them in blocks. Up to 25  transactions are sequentially pulled from the transactions pool, followed by subjecting them to the validation method. The rest of the nodes accept the transaction broadcast in a JSON bulk object. In accordance with the characteristics of the transaction,  it's explainable as a collection of objects. All nodes on the blockchain accept the broadcasted bulk object consistently, presently defined as every 5 seconds. During the interval, the bulk object amasses added transactions from the blockchain (25 at most). Additionally, the bulk object has a broadcast limit to avoid network congestion. At present, the broadcast limit is exercised as 3, implying the peers on the network relay every bulk object at a maximum of 3 hops. 
 	
 
-5.1.4 Transaction Pool
+##### 5.1.4 Transaction Pool
 
 The transaction pool provides the Phaeton network with a robust solution for preserving unconfirmed transactions that have overflown into the next block. As described in blocks, each block can only include 25 transactions, the transaction pool allows up to 1.000 multi-signature transactions and another 1.000 for the other transaction types to remain queued for the next block(s). The transaction pool can be thought of as a memory pool, keeping transactions until they are ready to be signed into a block. The second usage of the transaction pool is to provide a mechanism for propagating transactions. When a node prepares a transaction bundle, it draws up to 25 transactions from the pool and broadcast them to the network. In order to keep the transaction pool tidy, all transactions have a time to live assigned to them. We defined the time to live as 10800 seconds or 1080 blocks. The final use for the transaction pool is to house transactions with pending signatures. Like unconfirmed transactions, these transactions will expire and dissipate from the pool as a container based on the lifetime specified when the transaction is first received.(17)
-5.1.5 Key Pair
+
+
+##### 5.1.5 Key Pair
 
 A key pair comprises of a private key and a public key. A private key string is a combination of numbers and letters that only the holder of the key is familiar with. The public key, obtained from the private key has a purpose of validating the private key belonging to the holder while withholding entry to their private key. Elliptic curve cryptography is a method of creating cryptographically secure key pairs.
 
 The process used to generate the key pair operates in the following manner:
 
 When a user creates an account, it entails generating BIP39 mnemonics (the passphrase). This passphrase is hashed using The BLAKE2B hash function into a 256-bit string. This hash is subsequently used as a seed in Ed25519 to generate the private key string and derive its public key. The public key serves as part of the transaction and enables the nodes that receive the transaction to verify the validity of the signature using a key pair. This provides effective security for both the user and the network since the key string is known only to the user and the key pair validates the signature.
-5.1.6 Second passphrase
+
+
+##### 5.1.6 Second passphrase
     
 Phaeton also offers the option of an additional layer of security. For using these specific transactions, the user can register a second passphrase. The second passphrase is associated with the account.(18) This process requires all subsequent transactions to be additionally signed using the second passphrase for the transaction to be considered valid. The process of generating the second key pair is the same as the one for the initial key pair.
-5.1.7 Multisignature
+
+
+##### 5.1.7 Multisignature
 Phaeton supports multi-signature accounts as another security system for users requiring a higher degree of security. A multi-signature account is an account that requires multiple keys to authorize a transaction. Any user can enable multi-signature on their account by issuing a special transaction specifying a group of n keys and the minimum number of m signatures required to authorize a transaction.(19) Upon enabling this feature, it is mandatory that for processing any transaction originating from that account it must be signed by at least m out of the n keys for.
-5.1.8 Address
+
+
+##### 5.1.8 Address
 
 An address or the wallet ID is derived from the public key. The public key is hashed using BLAKE2B, at which point the first 8 bytes of the hash are reversed. The account ID is the numerical representation of those 8 bytes, with the ’L’ character appended at the end. The following figure is the representation of an address and its associated account details.
 
@@ -392,7 +399,7 @@ An address or the wallet ID is derived from the public key. The public key is ha
 	  }
 
 
-6. Data Compression
+## 6. Data Compression
 
 One of the underdeveloped aspects of Blockchain technology is data storage. As a blockchain grows by adding transaction and blocks, nodes need to store more information and new nodes on the network require a large chunk of information. That issue is addressed by data compression, reducing the size of the message through a compression algorithm. The original data is transformed through the compression method's codeword. 
 
@@ -401,9 +408,10 @@ Additionally, the encryption algorithms that secure the content of transmitted i
 Phaeton utilizes the latest cryptography technology to enable fast transaction rates. Elliptic curve cryptography is the method of choice, as it provides the highest degree of security across the scheme of operations in the network. Edwards-curve Digital Signature Algorithm (EdDSA) used in Phaeton is the fastest scalable hashing scheme that complies with our strict security standards. 
 
 
-7. Cryptography
-7.1 What is Cryptography?
-A lot of people use cryptography on a daily basis without realizing it. Many popular messaging apps use encryption. It is also one of the core features of blockchain technology. In this segment, we will provide a simple yet detailed explanation of cryptography, both symmetric and asymmetric key cryptography.[20] 
+## 7. Cryptography
+
+##### 7.1 What is Cryptography?
+A lot of people use cryptography on a daily basis without realizing it. Many popular messaging apps use encryption. It is also one of the core features of blockchain technology. In this segment, we will provide a simple yet detailed explanation of cryptography, both symmetric and asymmetric key cryptography. 
 
 Cryptography is the method of disguising and revealing, otherwise known as encrypting and decrypting information through complex mathematical calculation. Nobody but the intended recipients can view the encrypted information. The method involves taking unencrypted data, such as a piece of text, and encrypting it using a mathematical algorithm, commonly known as a cipher. This produces a ciphertext, a piece of information that is completely useless and nonsensical until decrypted. This method of encryption is known as symmetric-key cryptography.
 
@@ -414,7 +422,7 @@ The code base for most ciphers is an open source project, meaning their code is 
 Blockchain technology utilizes cryptography as a means of protecting the identities of users, ensuring transactions are done safely and securing all information and data of value. It provides complete confidence for anyone using blockchain technology that by recording something on a blockchain, it is done legitimately and in a manner that preserves security.
 Despite being founded upon a similar framework, the type of cryptography used in blockchain technology, namely public-key cryptography, it is far more suitable to the functions associated with the technology than symmetric-key cryptography.
 
-7.2 What is Public-Key Cryptography?
+##### 7.2 What is Public-Key Cryptography?
 
 Public-key cryptography, i.e. asymmetric cryptography, is an advancement from symmetric-key cryptography. It permits data transmission with the help of a public key, for safe distribution to anybody where the predetermined receivers can decipher the data.
             
@@ -426,14 +434,15 @@ Public-key cryptography generates a digital signature, protecting the soundness 
     
 Because the information comprises the digital signature in part, the network identifies it as false if any portion of it was subject third-party interference. Altering the smallest chunk of the information transmutes the signature as a whole, rendering it incorrect and unusable. The process enables blockchain technology to warrant the integrity, validity and correctness of any information stored on it. It is digital signatures that secure the data recorded on a blockchain from interference.
 
-7.2.1 Elliptic Curve Cryptography
+##### 7.2.1 Elliptic Curve Cryptography
 
 Phaeton uses ECC (Elliptic Curve Cryptography) to sign digital assets and to ensure the security of every transaction. It is possible to calculate the public key from a known private key. The Bitcoin network fully exercises ECC, widely regarded as the most powerful asymmetric algorithm given the key length.
     	
 Elliptic curve cryptography (ECC) is an approach to public key cryptography based on the algebraic structure of elliptic curves over finite fields.[21]  ECC requires smaller keys compared to non-ECC cryptography (based on plain Galois fields) to provide equivalent security. Elliptic curves are applicable for key agreements, digital signatures, pseudorandom generators and other tasks. Indirectly, their purpose is encryption by combining the key agreement with a symmetric encryption scheme.
 		
-8. Digital Signatures				
-8.1 What is a Digital Signature?
+## 8. Digital Signatures				
+
+##### 8.1 What is a Digital Signature?
 
 In a way, digital signatures do what their names suggest: they provide validation and authentication in the same way signatures do, in digital form. In this segment, we will discuss how they work as well as how multi signatures (multisigs) can be used to add an extra layer of security.[22]
 	
@@ -455,7 +464,8 @@ An algorithm that verifies signatures and determines whether the message is auth
 The key features of these algorithms are:
 Making it absolutely impossible to work out the private key based on the public key or data that it has encrypted
 Ensuring the authenticity of a signature based on the message and the private key, verified through the public key
-8.1.1 Multisignature
+
+##### 8.1.1 Multisignature
 
 Multisignature, abbr. multisig is a digital signature method addressing the need of multiple signees for authorization of transactions. A shared signature is more effective at all times than a group of singular digital signatures.
         
@@ -470,12 +480,13 @@ For instance, a multi-signature makes it possible to conduct a 2-of-3 collateral
 Multisignatures can be developed in countless combos (4-of-4, 3-of-5 collateral transaction accounts, etc), making them equally suitable for both tinier transfers, and transfers conducted by big business. For instance,  shareholder electees can build 7-of-11 collateral system built.
 
 Digital signatures constitute an essential component as a warranty for information on a blockchain, while nodes comprise the bedrock, performing the role of an underlying layer in the network.  
-9. Hashing
+## 9. Hashing
 
 Hashing is one of the fundamental processes in Blockchain technology. It warrants that all input data being processed by the cryptographic algorithm are unique providing a trustworthy environment in a trustless system. It eliminates the potential of the same transaction being validated and recorded in the Blockchain ledger.
 The algorithm that is used to transfer data utilizes its cryptographic capacity to create an encrypted output out of any information derived by a client on the network. In case when the transaction is deemed legitimate, the output is recorded in the Blockchain and is also used to constitute the link between blocks which is essentially a hash output.
 As the Blockchain grows in size, the computation can require random data to be combined with the input for the hash to be unique while keeping in mind future transactions will follow.
-9.1 Hashing as a security layer
+
+##### 9.1 Hashing as a security layer
 Taking into account the value of the data in the ledger, the hashing process has to secure the information itself to the degree that neither parameter of the input can be reverse engineered. This means the extent of the objects in the Blockchain can’t be derived from the hash value itself.
 
 The cryptographic algorithm has to ensure a number of qualities in the Blockchain:
@@ -491,13 +502,14 @@ Hashing speed and security are the breakthrough aspects of Blockchain technology
 
 The integrity that hashing provides is essential to Blockchain security. Another purpose of the hashing algorithm, which is open source is the fact that the message which is received can be validated by running the algorithm by the recipient which should produce the same hash value.
                                             	
-9.1.1 Hashing as an essential part of the Blockchain
+##### 9.1.1 Hashing as an essential part of the Blockchain
 The hashes as a whole comprise the eco-system and the current state of the Blockchain. Any new data is combined with the history of the Blockchain itself and the hashing algorithm automatically updates its status. What the algorithm digest produces is based on previous transactions and connected to the previous state.
 
 Data processed by the hashing algorithm upon the slightest change would produce an incomparable value; the security of the Blockchain can’t be questioned. If a perpetrator would manage to replace even a bit in the values contained in the ledger, all of the hashes would lose the correlation and as such they would all be incorrect.
 
 One of the basic features of the Blockchain is that data that don’t store personal information of a user but contributed to the transparency and functionality is available to the general public. Any tampering with a record that would alert the network would be easy to detect for the purpose of damage control and restoring the correct state.
-9.2 Hashing and the Blockchain structure
+
+##### 9.2 Hashing and the Blockchain structure
 For every program to run, a file structure needs to be defined. As the Blockchain is an advanced decentralized system, it depends on what we could call structure as code codependent. The algorithm makes use of public addresses when creating a new hash and stores them in the system. In favor, they serve as a pointer to the origin and destination of the previous and following transaction or block hash.
 
 The blocks are a sort of linear file structure where the pointers are connecting them in the Blockchain file system, the term being used for only for referential purposes.
@@ -513,7 +525,7 @@ The tree structure in the Blockchain is a common concept in IT for representing 
 
 
 
-10. Algorithms 
+## 10. Algorithms 
 
 BLAKE2 is a cryptographic hash function faster than MD5, SHA-1, SHA-2, and SHA-3, yet is at least as secure as the latest standard SHA-3. It’s predecessor, BLAKE made the final round in the NIST hash function competition. The winner of the competition was chosen as the SHA-3 standard algorithm. As the argument for BLAKE being omitted from the SHA-3 process was a subjective opinion of the judges, without any factual basis, we have many reasons to believe that it’s second version is the right choice for Phaeton. 
 
@@ -522,7 +534,9 @@ Many projects adopted BLAKE2 used in Phaton due to its high speed, security, and
 The throughput isn't conducive just for transaction speed. As vulnerabilities lie in the potential of a transaction subject to a silent listener in the middle, the faster it's transmitted stands as opposed to the chance of a breach. Most blockchains use SHA-256. Phaeton Core is faster and more secure, literally impenetrable.
 
 Another key factor for making BLAKE2b our go-to hashing algorithm is the ability to produce a block in an estimated period of 1 second. Considering all the use cases for Phaeton, this is vital to the user experience and extending the possible scenarios for our blockchain. This is a major improvement over Bitcoin, which takes around 10 minutes to produce a block and even the Ethereum network, where a block production takes from 10 to 19 seconds.
-10.1 BLAKE2b Specifications 
+
+
+##### 10.1 BLAKE2b Specifications 
 	
 RFC 7693 contains the specifications on BLAKE2b, and the code and test vectors are available on GitHub, licensed under CC0 (public domain-like). The book "The Hash Function BLAKE (2015)" describes BLAKE2 to the fullest extent. 
 
@@ -542,7 +556,7 @@ The plot below shows how BLAKE2 outperforms MD5, SHA-1, SHA-2, and SHA-3 on a Sk
   
 
 
-10.1.1 Blake2 Hashing Algorithm History
+##### 10.1.1 Blake2 Hashing Algorithm History
 
 Since BLAKE2 is very similar to BLAKE, we first describe the changes introduced with BLAKE2. We refer to https://131002.net/blake for a complete specification of BLAKE.[24]
 10.2 BLAKE2b Improvements
@@ -551,14 +565,14 @@ Since BLAKE2 is very similar to BLAKE, we first describe the changes introduced 
 BLAKE2b does 12 rounds, and BLAKE2s does 10 rounds, compared to 16 and 14 respectively for BLAKE. Based on the security analysis performed so far, and with reasonable assumptions on future progress, it is unlikely that 16 and 14 rounds are meaningfully more secure than 12 and 10 rounds. Considering that the initial BLAKE submission had 14 and 10 rounds, respectively, and that the later increase was due to the high speed of BLAKE.
 This change gives a direct speed-up of about 25% and 29%, respectively, on long data. Speed on short data also improves significantly.
 
-10.2.2 Rotations optimized for speed 
+##### 10.2.2 Rotations optimized for speed 
 
 The G function of BLAKE-512 performs four 64-bit word rotations of respectively 32, 25, 16, and 11 bits. BLAKE2b replaces 25 with 24, and 11 with 63:
     • Using a 24-bit rotation allows SSSE3-capable CPUs to perform two simultaneous rotations with a single SIMD instruction (namely, pshufb), whereas a rotation of 25 bits requires two shifts plus a logical OR. This reduces the arithmetic cost of the G function in recent Intel CPUs, from 18 single cycle instructions to 16 instructions, resulting in a 12% decrease of resource consumption.
 	
     • A 63-bit rotation implementation is optional as an addition (doubling) and a shift followed by a logical OR. This provides a slight performance improvement on platforms where simultaneous addition and shift are possible but two shifts aren't (i.e., some recent Intel CPUs). Additionally, since a rotation right by 63 is equal to a rotation by 1 to the left, this may be slightly faster in architectures that treat 1 as a special case. No platform experiences a downgrade in performance from these changes. For an in-depth analysis of optimized implementations of rotations, we refer to a previous work by two co-designers of BLAKE2. Past experiments by the BLAKE designers as well as third parties suggest that known differential attacks are unlikely to improve significantly, nor get worse.
 
-10.2.3 Minimal padding and finalization flags
+##### 10.2.3 Minimal padding and finalization flags
 
 BLAKE2 pads the last data block if and only if necessary, with null bytes. If the data length is a multiple of the block length, no addition of a padding byte occurs.
 
@@ -567,11 +581,11 @@ BLAKE2 introduces finalization flags f0 and f1, as auxiliary inputs to the compr
 
     • A second finalization flag f1 is used to signal the last node of a layer in tree-hashing modes. When processing the last block—that is, when f0 is ff...ff—the flag f1 issues also set to ff...ff if the node considered is the last, and to 00...00 otherwise. The finalization flags are processed by the compression function as described in §2.4. BLAKE2s thus supports hashing of data of at most 64 − 1 bytes, that is, almost 16 exbibytes (the amount of memory addressable by 64-bit processors). The upper bound for BLAKE2b are even more ridiculous, with up to 128 − 1 bytes supported.
 
-10.2.5 Fewer constants
+##### 10.2.5 Fewer constants
 
 Whereas BLAKE used 8 word constants as IV plus 16 word constants for use in the compression function, BLAKE2 uses a total of 8 word constants, instead of 24. This saves 128 ROM bytes and 128 RAM bytes in BLAKE2b implementations, and 64 ROM bytes and 64 RAM bytes in BLAKE2s implementations. 
 
-11. Nodes					
+## 11. Nodes					
 Nodes in the Blockchain are essential to one of the most valuable features in the decentralized network. One of the functions of a node is maintaining the history of the Blockchain ledger and the more active nodes a certain Blockchain has add up to its stability and potential endurance.
 In broader terms, a node is every device that is connected to a network through a certain protocol. In the world of IT, they can be central devices that host information and distribute it to computers, smart phones or tablets.
 11.1 Nodes in the Blockchain
@@ -582,27 +596,30 @@ There are two main types of nodes:
 The full node contains all of the history of the Blockchain ledger and as such can confirm and act as a backbone to the protocol. The lightweight nodes are primarily used for sending and receiving funds as progress in Blockchain technology has allowed for three reference points to be used in order to complete transfer.
 In some Blockchains, a node can act as an issuer of a Smart Contract. A node can be used by the Blockchain protocol as one connected to the network or a point of connection for other nodes.
 The development of different approaches and usability of Blockchain technology has created a new distinction of nodes according to the consensus protocol used to confirm transactions.
-11.1.2 Roles of nodes in Proof of Work protocol
+
+##### 11.1.2 Roles of nodes in Proof of Work protocol
 In this protocol, the main purpose is processing money transfers. Thus, nodes can act as a means to transfer funds and it’s up to the user if he wants to run a full or a lightweight node. When the Proof of Work protocol is used, one can run a wallet that can process transactions and receive fuel money, or the cost of the amount of computing power, electricity and being connected to the internet.
 As this became a lucrative endeavor in certain Blockchains where many transactions took place, a new type of node became the popular choice called a miner. Depending on the algorithm of the Blockchain, the hardware being used depended either on CPU and GPU power. It even resulted in the development of proprietary hardware for the Bitcoin network known as Asic miners.
 
-11.2 Roles of nodes in Delegated Proof of Stake protocol
+##### 11.2 Roles of nodes in Delegated Proof of Stake protocol
 The types of nodes in the PoS protocol Blockchains are the same as in the Proof of Work usage case, in the sense that they can be lightweight or full nodes. The difference is that there is a hierarchy introduced when it comes to benefitting from processing transactions.
 Namely, there is a selective process when it comes to profiting from processing transactions. A consensus protocol is introduced which utilizes delegation where only a predefined number of nodes can profit from their computing power. You can either cash in by buying tokens or contribute to the community and the combination of both can define your rank.
 While at first this may seem as a multilevel scheme, there are benefits to in regards to the benefits received in the Proof of Work system. The competition for profit from mining has become so competitive that the equipment and the power needed is nearly impossible to achieve. There are ethical concerns as well, with claims that extra coal has been used in China in mining farms. This isn’t good P.R. for Blockchain technologies nor is it good for the environment.
 Environmental and ethical issues aside, the process of forging in Proof of Stake as opposed to mining guarantees that the equipment being used will bring the top nodes profit and they won’t be stuck in the continuous loop of a level of difficulty and spending money on hardware as in PoW.
-11.2.1 Running a Blockchain Node
+
+##### 11.2.1 Running a Blockchain Node
 The requirements to own a node vary between cryptocurrencies and their consensus protocols. For example, we use a Delegated Proof of Stake consensus protocol which requires stakeholder approval. Therefore, in order to become an owner of a node that is forging, a user must first become a delegate which requires a certain number of PLKX tokens supporting them. In our ecosystem this is done by gaining votes, each PLKX token is worth a vote. 
     
 In practice, this means either buying tokens or receiving votes from other users of the network who are holding tokens. Regardless, the delegate must have enough PLKX supporting them to break into the top 101 and become a node that can validate transactions and earning token as a reward.
 
 At this point, nodes can only be run on the AWS infrastructure. In order to save our users from a complicated installation process and costs of running a node, we will update this document with detailed instructions when the next phase of development is finished. 
-12. Consensus Delegated Proof of Stake:
+## 12. Consensus Delegated Proof of Stake:
 
 Delegated Proof of Stake (abbr. DPoS) is a consensus protocol keeping undeniable concurrence on the authenticity across the network, validating transactions and resolving disputes in a civil manner. We chose it as the consensus mechanism for Phaeton due to its undeniable qualities. 
    
 The DPoS protocol diverges into two components: voting for a collective of block generators and planning block production. The voting mechanism ensures stakeholders have absolute control because stakeholders risk the most when the network does not function at an optimal level. The voting method has a low level of influence on continuous consensus attainment. Hence, this section will focus on the delegated proof of stake in general.
-12.1 The Delegated Proof-of-Stake Method 
+
+##### 12.1 The Delegated Proof-of-Stake Method 
 
 The Delegated Proof-of-Stake method differs from the common consensus protocols. Participants in a blockchain regulated by DPoS constitute of stakeholders and delegates. Delegates are casually called witnesses and these terms are interchangeable. 
 
@@ -624,7 +641,9 @@ Sign and broadcast blocks and validate transactions
 Addressing consensus issues, as DPoS relies on honest and democratic settlement
 
 Witnesses are unable to alter any transaction elements. Nevertheless, due to the fact they validate blocks, in theory, they could prevent appending particular transactions to a block. However, can't have a drastic negative impact as the following block generated will incorporate these transactions, providing the next witness with compensation for validating them. Therefore, postponement of transactions is trivial. Moreover, an untrustworthy witness would unavoidably lose his position in the consequential voting round by the rest of the network. Essentially, a DPoS network is sovereign and guarded by all of its users, to make sure the prosperity of the network remains the prime concern.
-12.1.1 Advantages of Delegated Proof-of-Stake:
+
+
+##### 12.1.1 Advantages of Delegated Proof-of-Stake:
 
 The most significant improvements that Delegated Proof of Stake offers, compared to the standard Proof of Work(PoW) consensus protocol are:
 
@@ -635,7 +654,7 @@ Saving on energy consumption: The Proof of Work protocol demands a considerable 
 
 Increased decentralization: To profit from a cryptocurrency using the Proof of Work consensus protocol, one needs massive computational power. This isn't conducive to decentralization as only those that can afford the specialized equipment will have a shot at deriving the hash value of a valid block, and consequently, receive a substantial portion of the block reward. A DPoS consensus protocol, in contrast, allows stakeholders to vote for transaction validators in accordance to their reputation, consequently advancing decentralization even further. It's plausible for stakeholders to pick an unlimited total of individual delegates, as long as they believe it is conducive to achieving a satisfactory level of decentralization.	
 
-13. Side Chains, Smart Contracts and DApps
+## 13. Side Chains, Smart Contracts and DApps
 13.1 Side chains explained
 Albeit a concept in circulation in blockchain technology for a while, functional side chains are a relatively new development. A side chain is a blockchain linked to its parent blockchain network, operating on a compatible layer, keeping it’s data private.
 
@@ -661,7 +680,8 @@ We present the core features of Phaeton’ side chains:
 	- Customized allocation of resources
 
 There is a reason behind using the term Blockchain technology as opposed to a specific Blockchain where the only purpose would be currency transfers. Just as the peer-to-peer network is the network layer of the Blockchain, the technology itself is flexible enough for applications and especially databases to be distributed through it with an added level of safety.
-13.2 Side chain use cases
+
+##### 13.2 Side chain use cases
 The Phaeton side chains are aimed at developers or organizations involved in projects that require a dependable platform for their distributed application. The resource consumption and infrastructure make them suitable for every scenario where blockchain applications and Smart Contracts are in a production phase and need to be deployed on a grand scale. as well as internal use for for safe testing of upgrades.
 
 There are numerous applicative uses through Smart Contracts and DApps based on the programming languages we support. Their compatibility with off-chain technology which can be used to scale resources and connect them through an API with existing applications or databases extends the usability of side chains to the furthest extent.
@@ -676,7 +696,8 @@ Deployment of large scale Smart Contracts
 Tested novel DApps with a potential large user base
 Enterprise DApps for organizations or companies
 Testing future upgrades in a safe environment
-13.2 Smart Contracts
+
+##### 13.2 Smart Contracts
 Before we discuss how developers can use a plethora of opportunities on the Blockchain for applications we’ll take a quick overview of Smart Contracts, as they’re the gateway between a DApps developers and their users.
 
 The workflow and coding should be concise and accurate, bearing in mind the fact that the execution of a Smart Contract is decentralized and deterministic in nature. That implies that it should be used in scenarios where it can be resolved by strictly defined contract conditions and a community that would like from the benefit of Smart Contracts should strive to create an environment where they could be applied.
@@ -714,7 +735,7 @@ Most of the DApps developed are fully open source and blockchains are starting t
 In fact, there are a lot of contradicting statements about dApps as there are for Blockchain technology in general. For a developer, the best way to get their facts straight about their particular interests would be through online contact with other developers through Gitter or Telegram, where the community resides.
 
 
-14. Sidechain Validation Network (SVN)
+## 14. Sidechain Validation Network (SVN)
 The fundamental problem with side chain networks is an added degree of centralization where validating transaction relies on a group of individuals who are users on a side chain aren’t incentivized for their contributions and the side chain itself is potentially unable to function as a trust-less system.
 
 All of the side chain nodes in Phaeton benefit from blockchain technology by being a part of a financial neural network. Independent of their inner economics, the transactions are distributed among side chains unknown to each other and the nodes on all networks benefit from confirming transactions on each side chain.
@@ -726,7 +747,7 @@ This enables the development of genuinely trustless blockchain application.  If 
 Startups who want to keep control of development and build a business model around their blockchain applications prefer this model, taking advantage of the other benefits of blockchain technology all the while. However, some the users would benefit from trust-less blockchain applications the most. Phaeton gives the option of building applications which can’t be shut down by any single entity, such as the developer, and are secured by anyone who wants to participate.
  
 
-14. Economics & Fees
+###  14. Economics & Fees
 Blockchain applications require rapid transfers and in order to offer an improvement over centralized infrastructure, costs need to be kept at a minimum. The Phaeton blockchain is built with throughput and performance in mind, as the main chain is developed for application specific requirements.
 
 We construct the economic model to offer value and promote blockchain technology as a solution for entities, companies and organizations that can benefit from it with fees lower than any competitive solution with the performance and security standards implemented.
@@ -759,11 +780,12 @@ The PLKX coin will benefit from the innovative side chain technology as it gener
 
 All participants in the upkeep of Phaeton will be rewarded, and as such joining the program will require a monthly fee. This is a mitigation strategy to avoid including users who would simply waste resources - either their own or of the whole Phaeton community.
 
-15. Business info and applications
+## 15. Business info and applications
 Our extensive analysis and research aimed at identifying the market needs. Along with understanding Blockchain technology and present solutions, we identified the deficiencies and came to the idea of creating a technological novelty.
 
 Phaeton is an high-end blockchain, aimed at enterprise solutions. The unique proposal it offers is usually subject to an ICO (Initial Coin Offering). Our organization is past that stage, but the qualities of the blockchain itself hold value in itself. The fully decentralized side chains are an original development of the managerial staff and developed upholding the highest quality standards by the technical staff.
-15.1 The team behind Phaeton
+
+##### 15.1 The team behind Phaeton
 
 PLAAK is the organization behind Phaeton, which is working on multiple parallel projects. Tasks are distributed among experts in their fields which includes a savvy approach to micromanagement and acquiring quality professionals that provide a best return on investment.
 PLAAK as a project is an entire ecosystem of distributed blockchain applications connected to a cloud infrastructure to cover the areas blockchain technology is yet to tackle. Our cryptocurrency platform is fully functional while the blockchain technology that is the subject of this paper is the next step of our development. The ecosystem is further comprised of a Freelance Application, a Business Suite, a Health Care solution, Investment and an E-Commerce platform. Phaeton is the core of the project but also a solution in itself. By applying cutting edge technology with innovative, applicable thinking we are able to offer blockchain solutions to companies across industries, various infrastructures and scale.
@@ -786,34 +808,53 @@ We firmly believe that by working hard on our set goals, having the financial gr
 
 The improvements that blockchain technology offers will bring clients at one point or another. However, the products we develop take time, effort and financial means and we are following best practices by informing the general public of how we can improve their livelihood. We are in the know we have to meet our clients half-way and are resorting to all means necessary to bring the benefit of technological advancements to communities.
 
-Citations:
+## Citations:
 
-1. Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477 [Accessed: Sep. 27, 2018]
-2. Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477  Accessed: Sep. 27, 2018] 
-3. S. Nakamoto. “Bitcoin: A Peer-to-Peer Electronic Cash System” Internet: https://nakamotoinstitute.org/bitcoin/#selection-7.4-9.38 October 31, 2008 [Accessed: Sep. 27, 2018]
-4. J. Chiu, T. Koeppl. “The Economics of Cryptocurrencies – Bitcoin and Beyond” Internet: https://www.chapman.edu/research/institutes-and-centers/economic-science-institute/_files/ifree-papers-and-photos/koeppel-april2017.pdf April, 2017 [Accessed: Sep. 27, 2018] 
-5. Joseph B., Andrew M. , Jeremy C., Arvind N., Joshua A. K., Edward W. F. “SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies” 
-Internet: https://wws.princeton.edu/system/files/research/documents/Felten_SoK.pdf May, 2015 [Accessed: Sep. 27, 2018]
-6. Massimo B, Livio P. “An empirical analysis of smart contracts: platforms, applications, and design patterns” arXiv:1703.06322 [cs.CR], March, 2017 Available: https://arxiv.org/pdf/1703.06322.pdf  [Accessed: Sep. 27, 2018] 
-7. Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477  Accessed: Sep. 27, 2018] 
-8. Dr. Gavin W. “ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER - BYZANTIUM VERSION e94ebda” Internet: https://ethereum.github.io/yellowpaper/paper.pdf June, 05, 2018 [Accessed: Sep. 27, 2018]
-9. Joseph B., Andrew M. , Jeremy C., Arvind N., Joshua A. K., Edward W. F. “SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies” 
-Internet: https://wws.princeton.edu/system/files/research/documents/Felten_SoK.pdf May, 2015 [Accessed: Sep. 27, 2018]
-10. Dr. Gavin W. “ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER - BYZANTIUM VERSION e94ebda” Internet: https://ethereum.github.io/yellowpaper/paper.pdf June, 05, 2018 [Accessed: Sep. 27, 2018]
-11. A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), pp. 5-6, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
+- Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477 [Accessed: Sep. 27, 2018]
 
+- Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477 Accessed: Sep. 27, 2018]
 
-12. A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), p. 7, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
-13. Lisk, [2018], Lisk Consensus Protocols, Consensus protocols are one of the most important and revolutionary aspects of blockchain technology, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/consensus-protocols 
-14. Aggelos K., Nikolaos L., Aikaterini-Panagiota Stouka. “Proofs of proofs of work with sublinear complexity”in Proc. of the 2008 Twentieth International Conference, Financial Cryptography and Data Security 2016, February 22–26, 2016 Bridgetown, Barbados, [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
-15. Aggelos K. Andrew M., Dionysis Z. “Non-Interactive Proofs of Proof-of-Work”, Cryptology ePrint Archive, Report 2017/963(edited), May 31, 2018 [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
-16. Aggelos K., Alexander R., Bernardo D., Roman O. “Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol”, Cryptology ePrint Archive, Report 2016/889(edited), August 21, 2017,  [Online] Available: https://eprint.iacr.org/2016/889.pdf [Accessed: Sep. 28, 2018]
-17.  Lisk, [2018], Lisk Peer-to-Peer Communication, Transaction Pool, URL: https://lisk.io/documentation/lisk-protocol/peer-to-peer-communication [Accessed: Sep. 28, 2018]
-18. Lisk, [2018], Lisk Security, Second Passphrase, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
-19. Lisk, [2018], Lisk Security, Multisignature, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
-20. Lisk, [2018], Cryptography, What is Cryptography?, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained [Accessed: Sep. 28, 2018]
-21. Standards for Efficient Cryptography Group, SEC 1: Elliptic Curve Cryptography, [Online] Available: http://www.secg.org/sec1-v2.pdf [Accessed: Oct. 3, 2018]
-22. Lisk, [2018], Digital Signatures, What is a Digital signature, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/digital-signatures [Aug, 
-23. Jacobson, M., Locasto, M., Mohassel, P., Safavi-Naini, Eds., Applied Cryptography and Network Security, 11th International Conference, ACNS 2013, Banff, Canada, June 25-28, 2013. New York: Springer, 2013 [Accessed: Sep. 28, 2018]
-24. BLAKE2 project, [Feb. 27, 2017], BLAKE2 — fast secure hashing, URL: https://blake2.net/ [Accessed: Sep. 28, 2018]
+- S. Nakamoto. “Bitcoin: A Peer-to-Peer Electronic Cash System” Internet: https://nakamotoinstitute.org/bitcoin/#selection-7.4-9.38 October 31, 2008 [Accessed: Sep. 27, 2018]
+
+- J. Chiu, T. Koeppl. “The Economics of Cryptocurrencies – Bitcoin and Beyond” Internet: https://www.chapman.edu/research/institutes-and-centers/economic-science-institute/_files/ifree-papers-and-photos/koeppel-april2017.pdf April, 2017 [Accessed: Sep. 27, 2018]
+
+- Joseph B., Andrew M. , Jeremy C., Arvind N., Joshua A. K., Edward W. F. “SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies” Internet: https://wws.princeton.edu/system/files/research/documents/Felten_SoK.pdf May, 2015 [Accessed: Sep. 27, 2018]
+
+- Massimo B, Livio P. “An empirical analysis of smart contracts: platforms, applications, and design patterns” arXiv:1703.06322 [cs.CR], March, 2017 Available: https://arxiv.org/pdf/1703.06322.pdf [Accessed: Sep. 27, 2018]
+
+- Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477 Accessed: Sep. 27, 2018]
+
+- Dr. Gavin W. “ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER - BYZANTIUM VERSION e94ebda” Internet: https://ethereum.github.io/yellowpaper/paper.pdf June, 05, 2018 [Accessed: Sep. 27, 2018]
+
+- Joseph B., Andrew M. , Jeremy C., Arvind N., Joshua A. K., Edward W. F. “SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies” Internet: https://wws.princeton.edu/system/files/research/documents/Felten_SoK.pdf May, 2015 [Accessed: Sep. 27, 2018]
+
+- Dr. Gavin W. “ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER - BYZANTIUM VERSION e94ebda” Internet: https://ethereum.github.io/yellowpaper/paper.pdf June, 05, 2018 [Accessed: Sep. 27, 2018]
+
+- A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), pp. 5-6, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
+
+- A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), p. 7, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
+
+- Lisk, [2018], Lisk Consensus Protocols, Consensus protocols are one of the most important and revolutionary aspects of blockchain technology, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/consensus-protocols
+
+- Aggelos K., Nikolaos L., Aikaterini-Panagiota Stouka. “Proofs of proofs of work with sublinear complexity”in Proc. of the 2008 Twentieth International Conference, Financial Cryptography and Data Security 2016, February 22–26, 2016 Bridgetown, Barbados, [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
+
+- Aggelos K. Andrew M., Dionysis Z. “Non-Interactive Proofs of Proof-of-Work”, Cryptology ePrint Archive, Report 2017/963(edited), May 31, 2018 [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
+
+- Aggelos K., Alexander R., Bernardo D., Roman O. “Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol”, Cryptology ePrint Archive, Report 2016/889(edited), August 21, 2017, [Online] Available: https://eprint.iacr.org/2016/889.pdf [Accessed: Sep. 28, 2018]
+
+- Lisk, [2018], Lisk Peer-to-Peer Communication, Transaction Pool, URL: https://lisk.io/documentation/lisk-protocol/peer-to-peer-communication [Accessed: Sep. 28, 2018]
+
+- Lisk, [2018], Lisk Security, Second Passphrase, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
+
+- Lisk, [2018], Lisk Security, Multisignature, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
+
+- Lisk, [2018], Cryptography, What is Cryptography?, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained [Accessed: Sep. 28, 2018]
+
+- Standards for Efficient Cryptography Group, SEC 1: Elliptic Curve Cryptography, [Online] Available: http://www.secg.org/sec1-v2.pdf [Accessed: Oct. 3, 2018]
+
+- Lisk, [2018], Digital Signatures, What is a Digital signature, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/digital-signatures [Aug,
+
+- Jacobson, M., Locasto, M., Mohassel, P., Safavi-Naini, Eds., Applied Cryptography and Network Security, 11th International Conference, ACNS 2013, Banff, Canada, June 25-28, 2013. New York: Springer, 2013 [Accessed: Sep. 28, 2018]
+
+- BLAKE2 project, [Feb. 27, 2017], BLAKE2 — fast secure hashing, URL: https://blake2.net/ [Accessed: Sep. 28, 2018]
 
