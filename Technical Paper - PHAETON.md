@@ -41,139 +41,139 @@ Table of Contents	2
 
 1. Abstract	4
 
-1.1 Introduction	4
+	1.1 Introduction	4
 
 2. Basic Terminology	7
 
 3. Cryptocurrencies: Overview	8
 
-3.1 Bitcoin & Ethereum: Basics	8
+	3.1 Bitcoin & Ethereum: Basics	8
 
-3.2 Bitcoin & Ethereum: Differences	11
+	3.2 Bitcoin & Ethereum: Differences	11
 
-3.2.1 Use Case: Ethereum	11
+	3.2.1 Use Case: Ethereum	11
 
-3.2.3 Use Case: Bitcoin	12
+	3.2.3 Use Case: Bitcoin	12
 
 4. Consensus Mechanisms:	13
 
-4.1 Mining	13
+	4.1 Mining	13
 
-4.2. Consensus layer support	15
+	4.2. Consensus layer support	15
 
-4.2.1 The linked list data pointer structure	15
+	4.2.1 The linked list data pointer structure	15
 
-4.2.2 Traversing the blockchain	16
+	4.2.2 Traversing the blockchain	16
 
-4.2.3 Non-interactive blockchain suffix proofs	16
+	4.2.3 Non-interactive blockchain suffix proofs	16
 
-4.2.4 Example	17
+	4.2.4 Example	17
 
-4.2.5 Exact probabilities of covert forkability for explicit values of n	17
+	4.2.5 Exact probabilities of covert forkability for explicit values of n	17
 
 5. P2P Network	19
 
-5.1 Architecture	20
+	5.1 Architecture	20
 
-5.1.1 System Headers	20
+	5.1.1 System Headers	20
 
-5.1.2 Block Propagation	21
+	5.1.2 Block Propagation	21
 
-5.1.3 Transaction Propagation	21
+	5.1.3 Transaction Propagation	21
 
-5.1.4 Transaction Pool	22
+	5.1.4 Transaction Pool	22
 
-5.1.5 Key Pair	22
+	5.1.5 Key Pair	22
 
-5.1.6 Second passphrase	22
+	5.1.6 Second passphrase	22
 
-5.1.7 Multisignature	22
+	5.1.7 Multisignature	22
 
-5.1.8 Address	23
+	5.1.8 Address	23
 
 6. Data Compression	24
 
 7. Cryptography	25
 
-7.1 What is Cryptography?	25
+	7.1 What is Cryptography?	25
 
-7.2 What is Public-Key Cryptography?	26
+	7.2 What is Public-Key Cryptography?	26
 
-7.2.1 Elliptic Curve Cryptography	26
+	7.2.1 Elliptic Curve Cryptography	26
 
 8. Digital Signatures	26
 
-8.1 What is a Digital Signature?	27
+	8.1 What is a Digital Signature?	27
 
-8.1.1 Multisignature	28
+	8.1.1 Multisignature	28
 
-8.1.2 Can one person use a multisig?	28
+	8.1.2 Can one person use a multisig?	28
 
 9. Hashing	28
 
-9.1 Hashing as a security layer	29
+	9.1 Hashing as a security layer	29
 
-9.1.1 Hashing as an essential part of the Blockchain	29
+	9.1.1 Hashing as an essential part of the Blockchain	29
 
-9.2 Hashing and the Blockchain structure	30
+	9.2 Hashing and the Blockchain structure	30
 
 10. Algorithms	31
 
-10.1 BLAKE2b Specifications	31
+	10.1 BLAKE2b Specifications	31
 
-10.1.1 Blake2 Hashing Algorithm History	32
+	10.1.1 Blake2 Hashing Algorithm History	32
 
-10.2 BLAKE2b Improvements	33
+	10.2 BLAKE2b Improvements	33
 
-10.2.1 Fewer rounds	33
+	10.2.1 Fewer rounds	33
 
-10.2.2 Rotations optimized for speed	33
+	10.2.2 Rotations optimized for speed	33
 
-10.2.3 Minimal padding and finalization flags	33
+	10.2.3 Minimal padding and finalization flags	33
 
-10.2.5 Fewer constants	34
+	10.2.5 Fewer constants	34
 
 11. Nodes	35
 
-11.1 Nodes in the Blockchain	35
+	11.1 Nodes in the Blockchain	35
 
-11.1.2 Roles of nodes in Proof of Work protocol	35
+	11.1.2 Roles of nodes in Proof of Work protocol	35
 
-11.2 Roles of nodes in Delegated Proof of Stake protocol	36
+	11.2 Roles of nodes in Delegated Proof of Stake protocol	36
 
-11.2.1 Running a Blockchain Node	36
+	11.2.1 Running a Blockchain Node	36
 
 12. Consensus Delegated Proof of Stake:	37
 
-12.1 The Delegated Proof-of-Stake Method	37
+	12.1 The Delegated Proof-of-Stake Method	37
 
-12.1.1 Advantages of Delegated Proof-of-Stake:	38
+	12.1.1 Advantages of Delegated Proof-of-Stake:	38
 
 13. Side Chains, Smart Contracts and DApps	39
 
-13.1 Side chains explained	39
+	13.1 Side chains explained	39
 
-13.1.2 Phaeton’ side chains solution	39
+	13.1.2 Phaeton’ side chains solution	39
 
-13.2 Side chain use cases	40
+	13.2 Side chain use cases	40
 
-13.2 Smart Contracts	41
+	13.2 Smart Contracts	41
 
-13.2.1 Smart contract use cases:	41
+	13.2.1 Smart contract use cases:	41
 
-13.3 Decentralized Applications (DApps)	41
+	13.3 Decentralized Applications (DApps)	41
 
 14. Sidechain Validation Network (SVN)	43
 
-14. Economics & Fees	44
+	14.1. Economics & Fees	44
 
 15. Business info and applications	46
 
-15.1 The team behind Phaeton	46
+	15.1 The team behind Phaeton	46
 
-15.2 Business Objectives	46
+	15.2 Business Objectives	46
 
-Citations:	48
+16 Citations:	48
 
 
 
