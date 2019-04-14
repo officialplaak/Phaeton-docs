@@ -910,17 +910,8 @@ The improvements that blockchain technology offers will bring clients at one poi
 
 - Aggelos K., Alexander R., Bernardo D., Roman O. “Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol”, Cryptology ePrint Archive, Report 2016/889(edited), August 21, 2017, [Online] Available: https://eprint.iacr.org/2016/889.pdf [Accessed: Sep. 28, 2018]
 
-- Lisk, [2018], Lisk Peer-to-Peer Communication, Transaction Pool, URL: https://lisk.io/documentation/lisk-protocol/peer-to-peer-communication [Accessed: Sep. 28, 2018]
-
-- Lisk, [2018], Lisk Security, Second Passphrase, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
-
-- Lisk, [2018], Lisk Security, Multisignature, URL: https://lisk.io/documentation/lisk-protocol/security [Accessed: Sep. 28, 2018]
-
-- Lisk, [2018], Cryptography, What is Cryptography?, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/blockchain-cryptography-explained [Accessed: Sep. 28, 2018]
-
 - Standards for Efficient Cryptography Group, SEC 1: Elliptic Curve Cryptography, [Online] Available: http://www.secg.org/sec1-v2.pdf [Accessed: Oct. 3, 2018]
 
-- Lisk, [2018], Digital Signatures, What is a Digital signature, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/digital-signatures [Aug,
 
 - Jacobson, M., Locasto, M., Mohassel, P., Safavi-Naini, Eds., Applied Cryptography and Network Security, 11th International Conference, ACNS 2013, Banff, Canada, June 25-28, 2013. New York: Springer, 2013 [Accessed: Sep. 28, 2018]
 
