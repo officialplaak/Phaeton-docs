@@ -900,10 +900,6 @@ The improvements that blockchain technology offers will bring clients at one poi
 
 - A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), pp. 5-6, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
 
-- A. Berentsen, F. Schär (2018, Jan) “A Short Introduction to the World of Cryptocurrencies”, Federal Reserve Bank of St. Louis Review, [Online], 100(1), p. 7, Available: https://files.stlouisfed.org/files/htdocs/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies.pdf [Accessed: Sep. 27, 2018]
-
-- Lisk, [2018], Lisk Consensus Protocols, Consensus protocols are one of the most important and revolutionary aspects of blockchain technology, URL: https://lisk.io/academy/blockchain-basics/how-does-blockchain-work/consensus-protocols
-
 - Aggelos K., Nikolaos L., Aikaterini-Panagiota Stouka. “Proofs of proofs of work with sublinear complexity”in Proc. of the 2008 Twentieth International Conference, Financial Cryptography and Data Security 2016, February 22–26, 2016 Bridgetown, Barbados, [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
 
 - Aggelos K. Andrew M., Dionysis Z. “Non-Interactive Proofs of Proof-of-Work”, Cryptology ePrint Archive, Report 2017/963(edited), May 31, 2018 [Online] Available: https://eprint.iacr.org/2017/963.pdf [Accessed: Sep. 28, 2018].
