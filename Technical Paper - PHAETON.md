@@ -912,7 +912,7 @@ The Interface sublayer creates a gateway via which dApps accesses the Phaeton Di
 Phaeton smart contracts functions would run on separate containers in stateless fashion. PLAAK team is working on integrating kubernetes containers and separate clients would be available for programming in C++, GO and Rust. PLAAK team will also work with Rust community and look at adding native web assembly compilers into its kubernetes containers running on Phaeton blockchain.
 
 
-![Architecture Img](https://i.ibb.co/wYJRF5G/architecture-2.png"Optional title")
+![Architecture Img](https://i.ibb.co/wYJRF5G/architecture-2.png "Optional title")
 
 
 ### 16.4 Pegsus-Dimension
@@ -920,8 +920,8 @@ Phaeton smart contracts functions would run on separate containers in stateless 
 The Pegsus-Dimension is the Principal Dimension of the system and will serve as the backbone of the Phaeton- Confederation. The Pegsus-Dimension will be governed by the Phaeton-Oﬃcialdom which is composedof the Executives that are selected via a continuous approval voting process. There will be a total of 28 Executives that will be responsible for the forging of Activity-Blocks on the Pegsus-Dimension.
 
 
-![Architecture Img](https://i.ibb.co/3mXZLQr/pyramid.png"Optional title")
-
+![Architecture Img](https://i.ibb.co/3mXZLQr/pyramid.png "Optional title")
+ 
 The Executives of the Pegsus-Dimension will also forge the ﬁrst Activity-Block on every Degree-1 Lotus
 
 ### 16.5 Voting Mechanism
