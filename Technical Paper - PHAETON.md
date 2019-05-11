@@ -769,7 +769,8 @@ Testing future upgrades in a safe environment
 Before we discuss how developers can use a plethora of opportunities on the Blockchain for applications we’ll take a quick overview of Smart Contracts, as they’re the gateway between a DApps developers and their users.
 
 The workflow and coding should be concise and accurate, bearing in mind the fact that the execution of a Smart Contract is decentralized and deterministic in nature. That implies that it should be used in scenarios where it can be resolved by strictly defined contract conditions and a community that would like from the benefit of Smart Contracts should strive to create an environment where they could be applied.
-13.2.1 Smart contract use cases:
+
+###### 13.2.1 Smart contract use cases:
 -        Securities
 -        Trade Finance
 -        Derivatives
@@ -780,8 +781,14 @@ The workflow and coding should be concise and accurate, bearing in mind the fact
 
 The benefits of Smart Contracts are eliminating lawyers and notaries and as more countries gravitate toward Blockchain they’re considered legal in nature. Other upsides are the fact no paperwork is needed nor any data can be lost as it’s kept by the Blockchain ledger which offers better security and confidentiality than standard contracts. From a financial standpoint, Smart Contracts offer intelligent money management where objectives have to be met for the funds to be released.
 
+Phaeton Smart Contracts can communicate with each other, e.g., to have another contract perform some operation pertinent to the completion of the current transaction, or to trigger a future transaction outside of the scope of the current transaction.
+
+Communication among contracts can be synchronous as well as asynchronous based on the design. The possibility of spam on account of the asynchronous communication, will be taken care of by the resource limiting algorithm.
+
 The coding is done in JavaScript and is pretty straightforward. An issuer uses a Smart Contract towards the other party involved and as long as conditions are met, the balance of the other party is required to have the funds defined to put the contract into action. If both of the factors are met, the buyer releases the funds and the contract is applied to the Blockchain Ledger. 
-13.3 Decentralized Applications (DApps)                                         
+
+###### 13.3 Decentralized Applications (DApps)   
+
 Being a Blockchain developer can be interpreted in two ways – you’re ether working the protocol itself or solutions based on the functionality of the decentralized network. The main difference between a classic and a decentralized app is that the database and at least part of the code is distributed on Blockchain nodes, as opposed to a single server.
 
 Many corporate entities and organizations as well as governments are starting to recognize the advantages of blockchain technology. Decentralized apps offer the same benefits, primarily in terms of security. This is why many coders are gravitating towards Blockchain projects while some are even working on their individual ideas.
@@ -914,6 +921,9 @@ Phaeton smart contracts functions would run on separate containers in stateless 
 
 ![Architecture Img](https://i.ibb.co/HTQLVqR/architecture-2.png "Optional title")
 
+Kubernetes is an open-source container orchestration system for automating application deployment, scaling, and management.It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts". It works with a range of container tools, including Docker. Many cloud services offer a Kubernetes-based platform or infrastructure as a service (PaaS or IaaS) on which Kubernetes can be deployed as a platform-providing service. Many vendors also provide their own branded Kubernetes distributions.
+
+The Node, also known as Worker or Minion, is a machine where containers (workloads) are deployed. Every node in the cluster must run a container runtime such as Docker, as well as the below-mentioned components, for communication with primary for network configuration of these containers.
 
 ### 16.4 Pegsus-Dimension
 
@@ -928,6 +938,10 @@ The Executives of the Pegsus-Dimension will also forge the ﬁrst Activity-Block
 
 At present, the Phaeton-Confederation is designed to run using the approval voting mechanism wherein an account can vote for up to 35 Executive candidates. Though it is not mandatory to vote for all 35, it is advised to utilize the full 35 votes to help keep Phaeton-Oﬃcialdomdecentralised,so that it can continue to serve through a wide and varied group of Executives from around the globe .
 Voting for Executive Candidates outside the top 27 will help to ensure there are enough standbys ready to take over in the event of major technical outages, geographical or environmental issues with the top 27 (Executives).
+
+### 16.6 Smart Contract Additions
+
+Phaeton supports smart contracts and dApp can be easily deployed in the Phaeton ecosystem on any Dimension. If all the dApps are deployed on Pegsus-Dimension they will be cramped up for resources. Phaeton is designed to facilitate dApps to spawn their own Latus-Dimension and build their whole ecosystem on that Dimensional space. Small dApps can choose a shared Dimensional where they can build their ecosystem. When they grow enough and are able to self sustain their own Dimension they can port their DApp to this new Lotus-Dimension or if they want to port to any other shared Dimension they can do that as well. This way the throughput for DApp will be much higher and cost for resources will be much lower on the Lotus-Dimension.
 
 
 ## 17. Citations:
