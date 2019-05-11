@@ -1,7 +1,9 @@
-##Technical Paper##
-#PLAAK Phaeton Chain##
-##www.plaak.com##
+## Technical Paper
 
+![Architecture Img](https://cdn-images-1.medium.com/max/1200/1*7odHKrszDLOKIMm4MdyH_g.png "Optional title")
+
+PLAAK Phaeton Chain
+www.plaak.com
 
 **Index**
 
