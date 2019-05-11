@@ -848,6 +848,8 @@ The PLKX coin will benefit from the innovative side chain technology as it gener
 
 All participants in the upkeep of Phaeton will be rewarded, and as such joining the program will require a monthly fee. This is a mitigation strategy to avoid including users who would simply waste resources - either their own or of the whole Phaeton community.
 
+
+
 ## 15. Business info and applications
 Our extensive analysis and research aimed at identifying the market needs. Along with understanding Blockchain technology and present solutions, we identified the deficiencies and came to the idea of creating a technological novelty.
 
@@ -857,7 +859,7 @@ Phaeton is an high-end blockchain, aimed at enterprise solutions. The unique pro
 
 PLAAK is the organization behind Phaeton, which is working on multiple parallel projects. Tasks are distributed among experts in their fields which includes a savvy approach to micromanagement and acquiring quality professionals that provide a best return on investment.
 PLAAK as a project is an entire ecosystem of distributed blockchain applications connected to a cloud infrastructure to cover the areas blockchain technology is yet to tackle. Our cryptocurrency platform is fully functional while the blockchain technology that is the subject of this paper is the next step of our development. The ecosystem is further comprised of a Freelance Application, a Business Suite, a Health Care solution, Investment and an E-Commerce platform. Phaeton is the core of the project but also a solution in itself. By applying cutting edge technology with innovative, applicable thinking we are able to offer blockchain solutions to companies across industries, various infrastructures and scale.
-15.2 Business Objectives
+##### 15.2 Business Objectives
 The direction that PLAAK is heading for is acquiring clients from medium to corporate entities, and large organizations in industries that are matching our solutions. We resort to our experience and promote the use of blockchain technology on a global level in industries that we are knowledgeable in and use cases that it has already covered.
 
 Fields that we are actively seeking customers are:
@@ -876,7 +878,59 @@ We firmly believe that by working hard on our set goals, having the financial gr
 
 The improvements that blockchain technology offers will bring clients at one point or another. However, the products we develop take time, effort and financial means and we are following best practices by informing the general public of how we can improve their livelihood. We are in the know we have to meet our clients half-way and are resorting to all means necessary to bring the benefit of technological advancements to communities.
 
-## Citations:
+## 16. Upcoming Development Plans
+
+### 16.1 Architecture
+Architecturally the Phaeton-System has been designed to scale with increasing load. It's unique in its multi- Dimensional design and the governance model. The Phaeton-Confederation will system with Executives governing along the primary Dimension, the Pegsus- Dimension. As the load on the system grows, it will facilitate other Dimensions to stem from itself. These secondary Dimensions are termed as Lotus-Dimension in the Phaeton ecosystem. As the Lotus-Dimensions start to reach the threshold, it can choose to facilitate origination of newer Dimensions.
+
+Initially, Phaeton only allows Lattus-Dimensions of Degree-1 to stem from the Pegsus-Dimension. With time the Phaeton-Oﬃcialdom will allow the Lotus- Dimensions to generate new Dimensions. The Phaeton- System will have a AI & ML Layer 
+
+The Phaeton-System can support up to 6084 Lotus- Dimensions spread over a 9-Dimensional space. Theoretically, the code has been designed to service up to 75,000-85,000 requests per second.
+
+Weighted Deputed Proof of Stake (WPoS) consensus mechanism, optimizations, in-memory processing and the AI layer helps achieve an industry-scale throughput in a single Dimension itself and also makes the system robust against unwarranted forks.
+
+Accounts in Phaeton-System can communicate with other accounts on the same Dimension, which is termed as Horizontal-Transaction, or across Dimensions, termed as Crosswise-Transaction.
+
+![Architecture Img](https://i.ibb.co/8NbwnRN/architecture-1.png "Optional title")
+
+### 16.2 Architectural Blueprint
+
+The Elemental Layer is the core layer of the Phaeton- System. The various sub-layers/sub-systems inside the Elemental Layer serve diﬀerent functions.
+
+The Framework in the Elemental Layer ensures a smooth and reliable transfer of data between the entities above a physical network. It provides the functional means that are required to transfer Activity-Block data.
+
+In the Dimension Data module, the information on transactions and Smart Contracts that arise from various dApps as well as individual transactions is managed and stored.
+
+The Operations module runs and operates transactions & Smart Contracts data from dApps. It also analyses  the  traﬃc   received.   Using the TCP/UDP protocol, it communicates with the Interface sub-layer to  send  and  receive  data in an Activity-Block.
+
+The Interface sublayer creates a gateway via which dApps accesses the Phaeton Dimension. It manages and supervises accounts that participate in the network. 
+
+
+
+### 16.3 Smart Contracts
+
+Phaeton smart contracts functions would run on separate containers in stateless fashion. PLAAK team is working on integrating kubernetes containers and separate clients would be available for programming in C++, GO and Rust. PLAAK team will also work with Rust community and look at adding native web assembly compilers into its kubernetes containers running on Phaeton blockchain.
+
+
+![Architecture Img](https://i.ibb.co/wYJRF5G/architecture-2.png"Optional title")
+
+
+### 16.4 Pegsus-Dimension
+
+The Pegsus-Dimension is the Principal Dimension of the system and will serve as the backbone of the Phaeton- Confederation. The Pegsus-Dimension will be governed by the Phaeton-Oﬃcialdom which is composedof the Executives that are selected via a continuous approval voting process. There will be a total of 28 Executives that will be responsible for the forging of Activity-Blocks on the Pegsus-Dimension.
+
+
+![Architecture Img](https://i.ibb.co/3mXZLQr/pyramid.png"Optional title")
+
+The Executives of the Pegsus-Dimension will also forge the ﬁrst Activity-Block on every Degree-1 Lotus
+
+### 16.5 Voting Mechanism
+
+At present, the Phaeton-Confederation is designed to run using the approval voting mechanism wherein an account can vote for up to 35 Executive candidates. Though it is not mandatory to vote for all 35, it is advised to utilize the full 35 votes to help keep Phaeton-Oﬃcialdomdecentralised,so that it can continue to serve through a wide and varied group of Executives from around the globe .
+Voting for Executive Candidates outside the top 27 will help to ensure there are enough standbys ready to take over in the event of major technical outages, geographical or environmental issues with the top 27 (Executives).
+
+
+## 17. Citations:
 
 - Yli-Huumo J., Ko D., Choi S, Park S., Smolander K. “Where Is Current Research on Blockchain Technology?—A Systematic Review.” PLoS ONE 11(10): e0163477. October 3, 2016 Available: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163477 [Accessed: Sep. 27, 2018]
 
