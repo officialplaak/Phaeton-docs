@@ -415,7 +415,7 @@ For this purpose, system data is used to generate the following JSON object:
       "port":7000,
       "height":1574654,
       "nethash":"da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba",
-      "broadhash":"c7e0902a7016205d456a427edda2b09f4b875f98ef40a224018a0274347146ac",
+      "Phaetonhash":"c7e0902a7016205d456a427edda2b09f4b875f98ef40a224018a0274347146ac",
       "minVersion":">=0.5.0"
     }
 
